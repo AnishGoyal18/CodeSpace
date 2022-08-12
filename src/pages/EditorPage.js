@@ -83,6 +83,7 @@ function EditorPage() {
     }, []);
 
     const onCodeChange = (code) => {
+        setCode(code);
         socket.emit("CODE-CHANGE", code);
     };
 

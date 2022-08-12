@@ -62,7 +62,7 @@ io.on("connection", (socket) => {
     socket.on("CODE-CHANGE", (code) => {
         const user = findUser(socket.id);
         console.log(code);
-        io.to(user.roomId).emit("CODE-CHANGE", code);
+        socket.broadcast.to(user.roomId).emit("CODE-CHANGE", code);
     });
 
     socket.on("LANGUAGE-CHANGE", (language) => {
