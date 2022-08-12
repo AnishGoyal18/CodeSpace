@@ -13,7 +13,7 @@ const startingCode = `#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-  cout << "CodeSpace : A Real-Time Code Editor";
+  cout << "CodeSpace";
   return 0;
 }`
 
@@ -122,10 +122,10 @@ function EditorPage() {
                 <div className='flex flex-col space-y-3 items-center'>
                     <div className='flex flex-col space-y-1 items-center m-4 mb-6'>
                         <h1 className='text-xl text-white font-bold'>
-                            <FontAwesomeIcon icon={faCode} /> &nbsp;
-                            <span className='font-bold'>Code</span>
+                            <FontAwesomeIcon icon={faCode} color='#C5C5C5' /> &nbsp;
+                            <span className='font-bold text-gray-300'>Code</span>
                             <span className='text-yellow-400'>Space</span> &nbsp;
-                            <FontAwesomeIcon icon={faCode} />
+                            <FontAwesomeIcon icon={faCode} color='#C5C5C5' />
                         </h1>
                         <h1 className='text-pink-400 text-xs'>A Real-Time Code Editor</h1>
                     </div>
